@@ -1,0 +1,42 @@
+{
+  "grid": [
+    { "id": "p1", "xs": 3, "class": "main", "table": "devhard" },
+    { "id": "p9", "xs": 6, "class": "main", "table": "onechannelrtTable"},
+    { "id": "ptest", "xs": 3, "class": "main", "table": "devhard", "hide": "!data.p2.w" },
+    { "id": "p2", "xs": 6, "class": "main", "table": "devhard" , "hide": 1}
+  ],
+  "spacing": 4,
+
+  "p1": [
+    { "prop": "chan", "title": "Channel ID", "type": "text" },
+    { "prop": "desc", "title": "$Type", "type": "text" },
+    { "prop": "devpropname", "title": "Dev Prop", "type": "input" },
+    { "prop": "gpio", "title": "Sensor ID", "type": "text" },
+    { "prop": "dvv", "title": "Def V", "type": "text", "hide": 1 }
+  ],
+
+  "ptest": [
+    { "prop": "header_testwrite", "title": "Тест записи", "type": "header" },
+    { "prop": "testValue", "title": "Записать значение", "type": "input" },
+
+    {
+      "prop": "writeButton",
+      "title": "$doWrite",
+      "type": "button",
+      "command": "writetochannel",
+      "param": "write"
+    }
+  ],
+
+  "p2": [
+    { "prop": "r", "title": "$Read", "type": "cb" },
+    { "prop": "w", "title": "$Write", "type": "cb" },
+    { "prop": "calc", "title": "$Devhard_Calc", "type": "input", "hide": "!data.p2.r" },
+    { "prop": "calc_out", "title": "$Devhard_Calc_Out", "type": "input", "hide": "!data.p2.w" }
+  ],
+  "p9": [
+    { "prop": "realtime_chan_str", "title": "Канал", "type": "text" },
+    { "prop": "realtime_dev_str", "title": "Устройство", "type": "text" }
+  ]
+  
+}

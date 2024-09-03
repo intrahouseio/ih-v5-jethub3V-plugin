@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "node-libgpiod": "^0.4.6"
+  }
+}

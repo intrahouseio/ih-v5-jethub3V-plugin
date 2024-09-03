@@ -1,0 +1,17 @@
+{
+  "name": "jethub3V",
+  "module": "index.js",
+  "single": 1,
+  "comment":"",
+  
+
+  "channel_folder_popup": {
+    "copypaste":false,
+    "delete":true
+  },
+
+  "channel_popup": {
+    "copypaste":false,
+    "delete":false
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "id":"jethub3V",
+    "description":"Jethub V3 plugin",
+    "comment":"Kernel 6.2 binding",
+    "cross":false,
+	"version":"5.0.3"
+}
